@@ -13,6 +13,9 @@ A Simple Calendar inspired from Google and Outlook Calendar written using Vanill
 
 Check out the [Demo](https://ashwinshenoy.com/calendar/)
 
+PS:
+Challenged to build the entire thing in 1 hour.
+
 There can be mistakes in the code :P
 
 Do Let me know your thoughts on this :)
