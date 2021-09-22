@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+:root {
+  --gray-color: #ccc;
+  --gray-color2: #f7f7f7;
+  --gray-color3: #70757a;
+  --black: #333;
+  --white: #fff;
+  --current-day: rgb(225, 243, 252);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  border: solid 1px var(--gray-color);
+}
+
+.cal-nav {
+  background: var(--gray-color2);
+  padding: 20px;
+  display: flex;
+  border-bottom: solid 1px var(--gray-color);
+  align-items: center;
+}
+
+.cal-nav a {
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.cal-nav a:first-child {
+  margin: 0;
+}
+
+.cal-today-button {
+  border: solid 1px var(--gray-color);
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.cal-nav__left img,
+.cal-nav__right img {
+  width: 15px;
+}
+
+.cal-nav__left {
+  margin: 5px 8px 0 30px;
+}
+
+.cal-nav__right {
+  margin: 5px 10px 0 8px;
+}
+
+.cal-nav__right img {
+  transform: rotate(180deg);
+}
+
+.cal-month-year {
+  font-size: 16px;
+  margin-left: 20px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+/* Cal - date */
+.cal-date {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.cal-hours-wrapper {
+  border-right: solid 1px var(--gray-color);
+}
+
+.cal-hours-timezone {
+  height: 66px;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: solid 1px var(--gray-color);
+  display: flex;
+  align-items: center;
+  color: #70757a;
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.cal-hour {
+  padding: 10px;
+  border-top: solid 1px var(--gray-color);
+  min-height: 42px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.cal-hour:first-child {
+  border-top: 0;
+}
+
+.cal-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.cal-date__col {
+  border-right: solid 1px var(--gray-color);
+}
+
+.cal-date__col:last-child {
+  border-right: 0;
+}
+
+.cal-date__head {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: solid 1px var(--gray-color);
+  text-align: center;
+  color: var(--gray-color3);
+}
+
+.cal-date__date {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.cal-date__day {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cal-date__block {
+  padding: 10px;
+  border-bottom: solid 1px var(--gray-color);
+  min-height: 42px;
+}
+
+.cal-date__block:last-child {
+  border-bottom: 0;
+}
+
+.cal-today {
+  background: var(--current-day);
+}
