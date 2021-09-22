@@ -1,6 +1,6 @@
 # Calendar
 
-A Simple Calendar inspired from Google and Outlook Calendar
+A Simple Calendar inspired from Google and Outlook Calendar written using Vanilla JS.
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![a](https://forthebadge.com/images/badges/uses-css.svg)
